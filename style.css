@@ -23,33 +23,63 @@ h1 {
     margin: -10px;
 }
 
-img {
-    width: 50%;
-    margin: 0px;
+.block-item h3 {
+  font-size: 65px;
+  letter-spacing: 5px;
+  color: bisque;
 }
+
+.block-item p {
+  color: orange;
+  text-decoration: orchid;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px; 
+  text-align: center;
+}
+
+img {
+    max-width: 33%;
+    width: 200px;
+    margin: 10px;
+}
+
+hr {
+  margin: 10px;
+} 
 
 /* Items and Groups
 Mobile to Desktop
 */
 
 .group {
-    display: flex;
-    flex-direction: column;  
-    margin-bottom: 100px;
+    width: 100%;
   }
 
   .item {
-    flex: 1;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     margin: 10px;
   }
 
-
-
   .img-item {
       display: flex;
-      flex-direction: row;
+      width: 100%;
       justify-content: center;
+      margin: 10px;
+  }
+
+  .img-item img {
+    max-width: 33%;
+    justify-content: space-evenly;
+  }
+
+  .block-item {
+    background-color: red;
+    background-image: url("images/sm4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
   }
 
   @media all and (min-width: 800px) {
@@ -61,6 +91,7 @@ Mobile to Desktop
     .group {
       flex-direction: row;
     }
+  
   
   }
 
