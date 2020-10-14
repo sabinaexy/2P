@@ -1,26 +1,53 @@
+html,
 body {
-    background-color: lightslategray;
-    text-align: center;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
 
+body {
+  background-color: lightslategray;
+  text-align: center;
+  margin: 0;
 }
 
 main {
-    background-color: cadetblue;
+  background-color: cadetblue;
+  width: 100%;
+}
 
+.full-width {
+  width: 100%;
+}
+#intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#intro-container .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  padding: 0 2%;
+}
+#intro-container .item p {
+  text-align: justify;
 }
 
 header {
-    text-align: center;
-    margin: -15px;
+  text-align: center;
+  margin: -15px;
 }
 
 header img {
-    width: 25%;
+  width: 25%;
 }
 
 h1 {
-    font-family: pegasus; 
-    margin: -10px;
+  font-family: pegasus;
+  margin: -10px;
 }
 
 .block-item h3 {
@@ -32,67 +59,51 @@ h1 {
 .block-item p {
   color: orange;
   text-decoration: orchid;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 50px; 
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 50px;
   text-align: center;
 }
 
 img {
-    max-width: 33%;
-    width: 200px;
-    margin: 10px;
+  max-width: 33%;
+  width: 200px;
+  margin: 10px;
 }
 
 hr {
   margin: 10px;
-} 
+}
 
 /* Items and Groups
 Mobile to Desktop
 */
 
 .group {
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  .item {
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-  }
+.item {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
 
-  .img-item {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      margin: 10px;
-  }
+.img-item {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 10px;
+}
 
-  .img-item img {
-    max-width: 33%;
-    justify-content: space-evenly;
-  }
+.img-item img {
+  max-width: 33%;
+  justify-content: space-evenly;
+}
 
-  .block-item {
-    background-color: red;
-    background-image: url("images/sm4.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-  }
-
-  @media all and (min-width: 800px) {
-
-    section, h1 {
-      padding: 0 10%;
-    }
-  
-    .group {
-      flex-direction: row;
-    }
-  
-  
-  }
-
- 
+.block-item {
+  background-color: red;
+  background-image: url("images/sm4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
