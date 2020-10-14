@@ -1,0 +1,67 @@
+body {
+    background-color: lightslategray;
+    text-align: center;
+
+}
+
+main {
+    background-color: cadetblue;
+
+}
+
+header {
+    text-align: center;
+    margin: -15px;
+}
+
+header img {
+    width: 25%;
+}
+
+h1 {
+    font-family: pegasus; 
+    margin: -10px;
+}
+
+img {
+    width: 50%;
+    margin: 0px;
+}
+
+/* Items and Groups
+Mobile to Desktop
+*/
+
+.group {
+    display: flex;
+    flex-direction: column;  
+    margin-bottom: 100px;
+  }
+
+  .item {
+    flex: 1;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+
+
+  .img-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  @media all and (min-width: 800px) {
+
+    section, h1 {
+      padding: 0 10%;
+    }
+  
+    .group {
+      flex-direction: row;
+    }
+  
+  }
+
+ 
