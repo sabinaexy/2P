@@ -16,9 +16,17 @@ main {
   width: 100%;
 }
 
+h1 {
+  font-family: pegasus;
+  margin: -10px;
+}
+
 .full-width {
   width: 100%;
 }
+
+/* Introduction/About container */
+
 #intro-container {
   display: flex;
   justify-content: center;
@@ -36,14 +44,7 @@ main {
   text-align: justify;
 }
 
-header img {
-  width: 25%;
-}
-
-h1 {
-  font-family: pegasus;
-  margin: -10px;
-}
+/* Footer */
 
 .block-item h3 {
   font-size: 65px;
@@ -51,30 +52,22 @@ h1 {
   color: bisque;
 }
 
-.block-item p {
+.block-item a {
   color: orange;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 50px;
   text-align: center;
 }
 
+/* Images */
+
+header img {
+  width: auto;
+}
+
 img {
   max-width: 33%;
   width: 200px;
-  margin: 10px;
-}
-
-/* Items and Groups
-Mobile to Desktop
-*/
-
-.group {
-  width: 100%;
-}
-
-.item {
-  display: flex;
-  flex-direction: column;
   margin: 10px;
 }
 
@@ -85,10 +78,22 @@ Mobile to Desktop
   margin: 10px;
 }
 
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
 .block-item {
   background-color: red;
   background-image: url("images/sm4.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media all and (min-width: 600px) {
+  .img {
+    width: 30%;
+  }
 }
