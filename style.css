@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 body {
@@ -36,11 +36,6 @@ main {
   text-align: justify;
 }
 
-header {
-  text-align: center;
-  margin: -15px;
-}
-
 header img {
   width: 25%;
 }
@@ -58,7 +53,6 @@ h1 {
 
 .block-item p {
   color: orange;
-  text-decoration: orchid;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 50px;
   text-align: center;
@@ -67,10 +61,6 @@ h1 {
 img {
   max-width: 33%;
   width: 200px;
-  margin: 10px;
-}
-
-hr {
   margin: 10px;
 }
 
@@ -84,7 +74,7 @@ Mobile to Desktop
 
 .item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 10px;
 }
 
@@ -93,11 +83,6 @@ Mobile to Desktop
   width: 100%;
   justify-content: center;
   margin: 10px;
-}
-
-.img-item img {
-  max-width: 33%;
-  justify-content: space-evenly;
 }
 
 .block-item {
