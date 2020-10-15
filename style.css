@@ -44,6 +44,16 @@ h1 {
   text-align: justify;
 }
 
+/* Projects */
+
+.item h3 {
+  font-size: 35px;
+}
+
+.item h4 {
+  margin-bottom: 0px;
+}
+
 /* Footer */
 
 .block-item h3 {
