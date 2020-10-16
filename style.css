@@ -18,11 +18,48 @@ main {
 
 h1 {
   font-family: pegasus;
-  margin: -10px;
+  margin: -20px;
+  padding-top: 20px;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: cursive;
 }
 
 .full-width {
   width: 100%;
+}
+
+/* Header/Navagation */
+
+header img {
+  margin-top: -10px;
+}
+
+header h1,
+h2 {
+  background-color: #b15e6c;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  background-color: #b15e6c;
+  padding: 20px;
+}
+
+header nav u1 {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav u1 li a {
+  margin: 0 20px 0 0;
+  font-family: fantasy;
+  color: #3f334d;
+  font-size: 30px;
 }
 
 /* Introduction/About container */
@@ -103,7 +140,7 @@ img {
 }
 
 @media all and (min-width: 600px) {
-  .img {
+  .img-item img {
     width: 30%;
   }
 }
