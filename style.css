@@ -112,7 +112,7 @@ header nav u1 li a {
 /* Images */
 
 header img {
-  width: auto;
+  width: 50%;
 }
 
 img {
@@ -140,4 +140,16 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media all and (min-width: 800px) {
+
+  section, h1 {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
 }
