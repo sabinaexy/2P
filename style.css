@@ -33,6 +33,10 @@ h2 {
 
 /* Header/Navagation */
 
+header {
+  overflow-y: auto;
+}
+
 header img {
   margin-top: -10px;
 }
@@ -112,7 +116,7 @@ header nav u1 li a {
 /* Images */
 
 header img {
-  width: 50%;
+  width: auto;
 }
 
 img {
@@ -144,12 +148,12 @@ img {
 
 @media all and (min-width: 800px) {
 
-  section, h1 {
-    padding: 0 10%;
+  .img-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin: 10px;
   }
-
-  .group {
-    flex-direction: row;
-  }
-
+  
 }
