@@ -113,10 +113,20 @@ header nav u1 li a {
   text-align: center;
 }
 
+/* Contact Form */
+
+form label {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: darkolivegreen;
+  font-family: sans-serif;
+}
+
 /* Images */
 
 header img {
-  width: auto;
+  width: 100%;
 }
 
 img {
@@ -127,6 +137,7 @@ img {
 
 .img-item {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
   margin: 10px;
@@ -150,10 +161,19 @@ img {
 
   .img-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     justify-content: center;
     margin: 10px;
   }
-  
+
+  header {
+    width: 100%;
+  }
+
+  .header-img {
+    max-width: 50%;
+    text-align: center;
+    display: inline-block;
+  }
 }
